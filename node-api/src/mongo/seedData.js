@@ -12,8 +12,8 @@ async function seedDB() {
 
   const user = {
     _id: mongoose.Types.ObjectId(1),
-    name: "Admin",
-    email: "admin@jsonapi.com",
+    name: "Visitante",
+    email: "visitante@jsonapi.com",
     password: hashPassword,
     created_at: new Date(),
     profile_image: "../../images/admin.jpg",
