@@ -48,10 +48,10 @@ function Cover() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join us today
+            Registre-se
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
-            Enter your email and password to register
+            Entre com seu email e uma nova senha para se registrar
           </MDTypography>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -93,7 +93,7 @@ function Cover() {
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Already have an account?{" "}
+                Já possui uma conta?{" "}
                 <MDTypography
                   component={Link}
                   to="/authentication/sign-in"
@@ -102,7 +102,7 @@ function Cover() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign In
+                  Logar
                 </MDTypography>
               </MDTypography>
             </MDBox>

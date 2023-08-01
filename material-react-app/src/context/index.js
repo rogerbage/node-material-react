@@ -55,7 +55,7 @@ const AuthContextProvider = ({ children }) => {
 
     setIsAuthenticated(isAuthenticated);
     if (location.pathname === "/auth/login" || location.pathname === "/auth/register") {
-      navigate("/dashboard");
+      navigate("/tables");
     } else {
       navigate(location.pathname);
     }
@@ -64,7 +64,7 @@ const AuthContextProvider = ({ children }) => {
   const login = (token) => {
     localStorage.setItem("token", token);
     setIsAuthenticated(true);
-    navigate("/dashboard");
+    navigate("/tables");
   };
 
   const logout = () => {

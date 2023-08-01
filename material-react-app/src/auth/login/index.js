@@ -37,8 +37,8 @@ function Login() {
   const [rememberMe, setRememberMe] = useState(false);
 
   const [inputs, setInputs] = useState({
-    email: "admin@jsonapi.com",
-    password: "secret",
+    email: "visitante@jsonapi.com",
+    password: "visitante",
   });
 
   const [errors, setErrors] = useState({
@@ -122,10 +122,10 @@ function Login() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Sign in
+            Login
           </MDTypography>
           <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
-            <Grid item xs={2}>
+            {/* <Grid item xs={2}>
               <MDTypography component={MuiLink} href="#" variant="body1" color="white">
                 <FacebookIcon color="inherit" />
               </MDTypography>
@@ -139,7 +139,7 @@ function Login() {
               <MDTypography component={MuiLink} href="#" variant="body1" color="white">
                 <GoogleIcon color="inherit" />
               </MDTypography>
-            </Grid>
+            </Grid> */}
           </Grid>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -158,7 +158,7 @@ function Login() {
             <MDBox mb={2}>
               <MDInput
                 type="password"
-                label="Password"
+                label="Senha"
                 fullWidth
                 name="password"
                 value={inputs.password}
@@ -175,12 +175,12 @@ function Login() {
                 onClick={handleSetRememberMe}
                 sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
               >
-                &nbsp;&nbsp;Remember me
+                &nbsp;&nbsp;Manter conectado
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth type="submit">
-                sign in
+                login
               </MDButton>
             </MDBox>
             {credentialsErros && (
@@ -190,7 +190,7 @@ function Login() {
             )}
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Forgot your password? Reset it{" "}
+                Esqueceu a senha? Resetar senha: {" "}
                 <MDTypography
                   component={Link}
                   to="/auth/forgot-password"
@@ -199,13 +199,13 @@ function Login() {
                   fontWeight="medium"
                   textGradient
                 >
-                  here
+                  aqui
                 </MDTypography>
               </MDTypography>
             </MDBox>
             <MDBox mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Don&apos;t have an account?{" "}
+                Não possui uma conta?{" "}
                 <MDTypography
                   component={Link}
                   to="/auth/register"
@@ -214,7 +214,7 @@ function Login() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign up
+                  Registre-se
                 </MDTypography>
               </MDTypography>
             </MDBox>

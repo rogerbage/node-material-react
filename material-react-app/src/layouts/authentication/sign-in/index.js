@@ -87,7 +87,7 @@ function Basic() {
               <MDInput type="email" label="Email" fullWidth />
             </MDBox>
             <MDBox mb={2}>
-              <MDInput type="password" label="Password" fullWidth />
+              <MDInput type="password" label="Senha" fullWidth />
             </MDBox>
             <MDBox display="flex" alignItems="center" ml={-1}>
               <Switch checked={rememberMe} onChange={handleSetRememberMe} />
@@ -98,7 +98,7 @@ function Basic() {
                 onClick={handleSetRememberMe}
                 sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
               >
-                &nbsp;&nbsp;Remember me
+                &nbsp;&nbsp;Manter Conectado
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
@@ -108,7 +108,7 @@ function Basic() {
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Don&apos;t have an account?{" "}
+                Não possui uma conta?{" "}
                 <MDTypography
                   component={Link}
                   to="/authentication/sign-up"
@@ -117,7 +117,7 @@ function Basic() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign up
+                  Registre-se
                 </MDTypography>
               </MDTypography>
             </MDBox>

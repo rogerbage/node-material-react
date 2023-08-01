@@ -251,7 +251,7 @@ export default function App() {
               <Route path="register" element={<Navigate to="/auth/register" />} />
               <Route path="forgot-password" element={<Navigate to="/auth/forgot-password" />} />
               {getRoutes(routes)}
-              <Route path="*" element={<Navigate to="/dashboard" />} />
+              <Route path="*" element={<Navigate to="/tables" />} />
             </Routes>
           </ThemeProvider>
         </CacheProvider>
@@ -299,7 +299,7 @@ export default function App() {
               key="user-management"
             />
             {getRoutes(routes)}
-            <Route path="*" element={<Navigate to="/dashboard" />} />
+            <Route path="*" element={<Navigate to="/tables" />} />
           </Routes>
         </ThemeProvider>
       )}

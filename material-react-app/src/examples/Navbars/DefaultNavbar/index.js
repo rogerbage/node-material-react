@@ -112,7 +112,7 @@ function DefaultNavbar({ transparent, light, action }) {
           pl={{ xs: 0, lg: 1 }}
         >
           <MDTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-            Material Dashboard 2
+            React + Material UI, por Roger Borges.
           </MDTypography>
         </MDBox>
         {authContext.isAuthenticated && (
@@ -120,19 +120,19 @@ function DefaultNavbar({ transparent, light, action }) {
             <DefaultNavbarLink
               icon="donut_large"
               name="dashboard"
-              route="/dashboard"
+              route="/tables"
               light={light}
             />
             <DefaultNavbarLink icon="person" name="profile" route="/profile" light={light} />
             <DefaultNavbarLink
               icon="account_circle"
-              name="sign up"
+              name="Registrar"
               route="/authentication/sign-up"
               light={light}
             />
             <DefaultNavbarLink
               icon="key"
-              name="sign in"
+              name="Login"
               route="/authentication/sign-in"
               light={light}
             />
@@ -142,19 +142,19 @@ function DefaultNavbar({ transparent, light, action }) {
           <MDBox color="inherit" display={{ xs: "none", lg: "flex" }} m={0} p={0}>
             <DefaultNavbarLink
               icon="account_circle"
-              name="register"
+              name="Registrar"
               route="/auth/register"
               light={light}
             />
             <DefaultNavbarLink
               icon="key"
-              name="login"
+              name="Login"
               route="/auth/login"
               light={light}
             />
           </MDBox>
         )}
-        {action &&
+        {/* {action &&
           (action.type === "internal" ? (
             <MDBox display={{ xs: "none", lg: "inline-block" }}>
               <MDButton
@@ -182,7 +182,7 @@ function DefaultNavbar({ transparent, light, action }) {
                 {action.label}
               </MDButton>
             </MDBox>
-          ))}
+          ))} */}
         <MDBox
           display={{ xs: "inline-block", lg: "none" }}
           lineHeight={0}

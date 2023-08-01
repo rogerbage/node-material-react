@@ -86,11 +86,10 @@ function BasicLayout({ image, children }) {
                     width="80%"
                   >
                     <Typography variant="h3" style={{ color: "white" }}>
-                      Log in to Material Dashboard NodeJS Live Preview
+                      Teste para vaga na eStracta, por Roger Borges
                     </Typography>
                     <Typography variant="body2" style={{ color: "white" }} margin="0.5rem 0">
-                      Log in to see how you can go from frontend to fullstack in an instant with an
-                      API-based NodeJS backend
+                      Tabela de empresas com paginação com api em node.js, Mongodb, client React com Material UI
                     </Typography>
                     <MDBox
                       display="flex"
@@ -100,7 +99,7 @@ function BasicLayout({ image, children }) {
                       marginBottom="0.5rem"
                     >
                       <Typography variant="body2" fontWeight="700" style={{ color: "white" }}>
-                        You can log in with
+                        Você pode se logar com:
                       </Typography>
                       <List dense={true}>
                         <ListItem>
@@ -114,11 +113,11 @@ function BasicLayout({ image, children }) {
                               >
                                 Username{" "}
                                 <Typography variant="span" fontWeight="700">
-                                  admin@jsonapi.com
+                                  visitante@jsonapi.com
                                 </Typography>{" "}
                                 with password{" "}
                                 <Typography variant="span" fontWeight="700">
-                                  secret
+                                  visitante
                                 </Typography>
                               </Typography>
                             }

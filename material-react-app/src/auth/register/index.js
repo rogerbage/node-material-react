@@ -133,10 +133,10 @@ function Register() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Join us today
+            Registre-se
           </MDTypography>
           <MDTypography display="block" variant="button" color="white" my={1}>
-            Enter your email and password to register
+            Entre com seu email e uma nova senha para se registrar
           </MDTypography>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
@@ -144,7 +144,7 @@ function Register() {
             <MDBox mb={2}>
               <MDInput
                 type="text"
-                label="Name"
+                label="Nome"
                 variant="standard"
                 fullWidth
                 name="name"
@@ -190,7 +190,7 @@ function Register() {
             <MDBox mb={2}>
               <MDInput
                 type="password"
-                label="Password"
+                label="Senha"
                 variant="standard"
                 fullWidth
                 name="password"
@@ -200,7 +200,7 @@ function Register() {
               />
               {errors.passwordError && (
                 <MDTypography variant="caption" color="error" fontWeight="light">
-                  The password must be of at least 8 characters
+                  A senha precisa ter pelo menos 8 caracteres
                 </MDTypography>
               )}
             </MDBox>
@@ -213,7 +213,7 @@ function Register() {
                 sx={{ lineHeight: "1.5", cursor: "pointer" }}
                 htmlFor="agree"
               >
-                &nbsp;&nbsp;I agree to the&nbsp;
+                &nbsp;&nbsp;Eu concordo com os&nbsp;
               </InputLabel>
               <MDTypography
                 component={Link}
@@ -223,12 +223,12 @@ function Register() {
                 color="info"
                 textGradient
               >
-                Terms and Conditions
+                Termos e Condições
               </MDTypography>
             </MDBox>
             {errors.agreeError && (
               <MDTypography variant="caption" color="error" fontWeight="light">
-                You must agree to the Terms and Conditions
+                Você precisa ler e concordar com os Termos e Condições
               </MDTypography>
             )}
             {errors.error && (
@@ -238,12 +238,12 @@ function Register() {
             )}
             <MDBox mt={4} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth type="submit">
-                sign in
+                Registrar
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Already have an account?{" "}
+                Já possui uma conta?{" "}
                 <MDTypography
                   component={Link}
                   to="/auth/login"
@@ -252,7 +252,7 @@ function Register() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign In
+                  Logar
                 </MDTypography>
               </MDTypography>
             </MDBox>
