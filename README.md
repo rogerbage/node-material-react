@@ -7,7 +7,6 @@
 > Iniciando a Api node.js
 ```bash
 $ git clone https://github.com/rogerbage/node-material-react.git
-$ cd black-dashboard-flask
 $ cd node-material-react
 $ cd node-api
 $ yarn install
