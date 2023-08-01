@@ -11,11 +11,17 @@ $ cd node-material-react
 $ cd node-api
 $ yarn install
 $ mv env.sample .env
-$ yarn run start:dev
 ```
 
 > Configure uma conta em mongodb.com e cole no arquivo .env:
 DB_LINK="user:xxxxxxx@cluster0.lirqm0n.mongodb.net/"
+
+> Inicie a API node
+```bash
+$ yarn run start:dev
+```
+
+
 
 > Em outro terminal:
 
